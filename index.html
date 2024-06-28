@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>التسجيل وتسجيل الدخول</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>التسجيل وتسجيل الدخول</h1>
+    </header>
+    <main>
+        <section>
+            <h2>التسجيل</h2>
+            <form id="registerForm">
+                <label for="reg_username">اسم المستخدم:</label>
+                <input type="text" id="reg_username" name="username" required>
+                <label for="reg_password">كلمة المرور:</label>
+                <input type="password" id="reg_password" name="password" required>
+                <button type="submit">تسجيل</button>
+            </form>
+            <p id="register_message"></p>
+        </section>
+        <section>
+            <h2>تسجيل الدخول</h2>
+            <form id="loginForm">
+                <label for="login_username">اسم المستخدم:</label>
+                <input type="text" id="login_username" name="username" required>
+                <label for="login_password">كلمة المرور:</label>
+                <input type="password" id="login_password" name="password" required>
+                <button type="submit">دخول</button>
+            </form>
+            <p id="login_message"></p>
+        </section>
+        <section>
+            <h2>إضافة سؤال</h2>
+            <form id="questionForm" style="display: none;">
+                <label for="question">السؤال:</label>
+                <input type="text" id="question" name="question" required>
+                <button type="submit">إرسال</button>
+            </form>
+            <p id="question_message"></p>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
